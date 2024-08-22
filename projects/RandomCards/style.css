@@ -1,0 +1,88 @@
+body{
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    height: 80vh;
+}
+.card, .icon, .header, .para, .swtich .suprise{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+.card{
+    position: relative;
+    background-color: rgb(141, 139, 139);
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset -5px -5px 10px 0px rgba(0, 0, 0, 0.5), inset 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+}
+.card img{
+    border-radius: 20%;
+    box-shadow: 25px -5px 1px 0px cyan;
+}
+
+.header h1{
+    font-size: 1.7rem;
+    color: whitesmoke;
+}
+.icon{
+    position: absolute;
+    top: 20px;
+}
+.header h3{
+    position: absolute;
+    top: 385px;
+    font-size: 1rem;
+}
+.para{
+    position: absolute;
+    top: 450px;
+    width: 65%;
+    text-align: center;
+    font-size: 1.1rem;
+}
+.switch{
+    position: absolute;
+    top: 610px;
+}
+.switch button{
+    font-size: 2rem;
+    background: transparent;
+    border: none;
+    color: rgb(19, 204, 204);
+}
+.suprise{
+    position: absolute;
+    top: 670px;
+    width: 45%;
+}
+.suprise button{
+    border-radius: 18px;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1em;
+    border: none;
+    background-color: rgb(179, 179, 179);
+}
+.switch button:hover, .suprise button:hover{
+    cursor: pointer;
+}
+.switch button:active{
+    color: rgb(10, 95, 125);
+}
+.suprise button:hover{
+    background-color: gray  ;
+    color: whitesmoke   ;
+    transition: .6s;
+}

@@ -1,0 +1,106 @@
+body{
+    background-color: rgb(72, 72, 72);
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+.cardCon{
+    background-color: darkcyan;
+    position: relative;
+    width: 30%;
+    height: 43vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    justify-content: start;  
+}
+.creditCard{
+    border: 2px solid green;
+    width: 70%;
+    height: 23vh;
+    background-image: url("https://t3.ftcdn.net/jpg/00/86/56/12/360_F_86561234_8HJdzg2iBlPap18K38mbyetKfdw1oNrm.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 8px;
+    position: relative;
+    bottom: 90px;
+    border-radius: 16px;
+}
+.logos{
+    display: flex;
+    justify-content: space-between;
+}
+.creditNumbers{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    font-size: 1.4rem;
+    color: white;
+}
+.brd{
+    width: fit-content;
+    display: flex;
+    gap: 40px;
+    padding: 5px;
+}
+.nameExpire{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+.placeholder{
+    color: gray;
+}
+.main{
+    color: white;
+}
+.inputCon{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    top: 170px;
+}
+.inputCon div{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.inputCon input{
+    margin-left: 10%;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 1.001rem;
+    -webkit-appearance: none;
+}
+.inputCon label{
+    margin-left: 12%;
+    font-size: .99rem;
+}
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.dateCon{
+     border: 2px solid red;
+     display: flex;
+     align-items: center;
+}
+.header{
+    width: 100%;
+    border: 2px solid rebeccapurple;
+}
+.dateCVV{
+    width: 28%; 
+    padding: 5px;
+}

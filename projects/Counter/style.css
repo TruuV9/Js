@@ -1,0 +1,30 @@
+body{
+    background-color: rgb(150, 150, 150);
+}
+section{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+}
+.div1{
+    font-size: 4rem;
+}
+.div2{
+    display: flex;
+    gap: 40px;
+}
+.btns{
+    padding: 20px;
+    border-radius: 18px;
+    width: 200px;
+    font-size: 1.6rem;
+    background-color: rgb(207, 207, 207);
+}
+.btns:hover{
+    cursor: pointer;
+    background-color: gray;
+    color: whitesmoke;
+    transition: .4s;
+}

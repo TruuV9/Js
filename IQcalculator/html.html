@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IQ Test Result</title>
+</head>
+<body>
+    <h1>IQ Test Result</h1>
+    <input id="IQinput" type="number" min="0" max="10">
+    <button id="btn">Submit</button>
+    <span id="iqResult"></span>
+
+    <script>
+        const input = document.getElementById('IQinput');
+        const btn = document.getElementById('btn');
+        let result = document.getElementById('iqResult');
+
+        btn.addEventListener('click', function() {
+            const maxTestScore = 10;  // The max score of the test is 10
+            const maxIQ = 130;        // The highest IQ score in your range
+            const minIQ = 70;         // The lowest IQ score in your range
+
+            let testScore = parseFloat(input.value); // Get the input value
+
+            if (testScore <  || testScore > maxTestScore) {
+                alert("Please enter a score between 0 and 10.");
+                return;
+            }
+
+            const IQ = ((testScore / maxTestScore) * (maxIQ - minIQ)) + minIQ;
+            result.textContent = `Your estimated IQ is: ${IQ.toFixed(2)}`;
+        });
+    </script>
+</body>
+</html>

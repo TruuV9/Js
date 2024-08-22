@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <!-- Card Container -->
+        <div class="cardCon">
+            <!-- Credit Card  -->
+            <div class="creditCard">
+                <!-- Logos -->
+                <div class="logos">
+                    <img src="/Credit Card/img/electronic chip.png" width="90px">
+                    <img src="/Credit Card/img/visa.png" width="70px">
+                </div>
+                <!-- Card Number -->
+                <div class="creditNumbers">
+                    <div class="brd">
+                        <div><span>####</span></div>
+                        <div><span>####</span></div>
+                        <div><span>####</span></div>
+                        <div><span>####</span></div>
+                    </div>
+                </div>
+                <!-- Name and expire date -->
+                <div class="nameExpire">
+                    <div class="nameCon">
+                        <div class="titleName"><span class="placeholder">Card Holder</span></div>
+                        <div class="name"><span class="main">FULL NAME</span></div>
+                    </div>
+                    <div class="expireCon">
+                        <div class="titleBirth"><span class="placeholder">Expire</span></div>
+                        <div class="expire"><span class="main">MM/YY</span></div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of credit card -->
+            <div class="inputCon">
+                <div>
+                    <label for="number">Card Number</label>
+                    <input type="number" name="number" id="number">
+                </div>
+                <div>
+                    <label for="holder">Card Holder</label>
+                    <input type="text" name="holder" id="holder">
+                </div>
+                <div class="dateCon">
+
+                    <div class="header">
+                        <label for="month">Expire Date</label>
+                    </div>
+                    
+                    <select class="dateCVV" id="month" name="month">
+                        <option value="" disabled selected hidden>Select your month</option>
+                        <option value="january">January</option>
+                        <option value="february">February</option>
+                        <option value="march">March</option>
+                        <option value="april">April</option>
+                        <option value="may">May</option>
+                        <option value="june">June</option>
+                        <option value="july">July</option>
+                        <option value="august">August</option>
+                        <option value="september">September</option>
+                        <option value="october">October</option>
+                        <option value="november">November</option>
+                        <option value="december">December</option>
+                    </select>
+
+                    <select class="dateCVV" id="year" name="year">
+                        <option value="" disabled selected hidden>Select your year</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                        <option value="2028">2027</option>
+                        <option value="2029">2029</option>
+                        <option value="2030">2030</option>
+                    </select>
+
+                    <input type="number" class="dateCVV">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
